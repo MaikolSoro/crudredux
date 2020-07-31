@@ -14,7 +14,25 @@ const  initialState = {
 
 export default function(state = initialState, action) {
 	switch(action.type) {
-		// los case van a describir lo que va pasar con la aplicación  y va ir cambiando el state de acuerdo con el pyload
+		// los case van a describir lo que va pasar con la aplicación  y va ir cambiando el state de acuerdo con el payload
+		case AGREGAR_PRODUCTO: 
+		return {
+			...state,
+			loading: action.payload
+		}
+		case AGREGAR_PRODUCTO_EXITO:
+			return {
+				...state,
+				loading: false,
+				productos: [...state.productos, action.payload]
+			}
+
+			case AGREGAR_PRODUCTO_ERROR:
+				return {
+					...state,
+					loading: false,
+					error: action.payload
+				}
 		default:
 			return state;
 	}
