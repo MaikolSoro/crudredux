@@ -20,7 +20,7 @@ const NuevoProductos = ({history}) => {
 	const error = useSelector(state => state.productos.error);
 
 	// Mandar a llamar el action de productoAction
-	const agregarProducto = (producto) => dispatch( crearNuevoProductoAction() )
+	const agregarProducto = (producto) => dispatch( crearNuevoProductoAction(producto) )
 
 	// cuando el usuario haga submit
 	const submitNuevoProducto = e => {
