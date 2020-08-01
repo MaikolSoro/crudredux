@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from 'react';
+import Producto from './Producto';
 
 // Redux
 
@@ -13,8 +14,14 @@ const Productos = () => {
 		//consultar la api
 		const cargarProductos = () => dispatch( obtenerProductosAction() );
 		cargarProductos();
-		
+
 	}, []);
+
+	// obtner el state
+	const productos = useSelector( state => state.productos.productos );
+	console.log(productos);
+
+
 	return ( 
 		<Fragment>
 			<h2 className="text-center my-5">Listado de Productos</h2>
@@ -28,6 +35,16 @@ const Productos = () => {
 				</thead>
 				<tbody>
 					{/* TODO: Mostrar los datos que vengan desde la API*/}
+
+					 { productos.length  === 0 ? 'No hay productos' : (
+						 productos.map(producto => (
+							 <Producto 
+								key={producto.id}
+								producto={producto}
+
+							 />
+						 ))
+					 )}
 				</tbody>
 			</table>
 		</Fragment>
