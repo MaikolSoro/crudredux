@@ -1,5 +1,5 @@
 
-## A CRUD with redux
+##  CRUD 
   Simple website using, react, Redux, Rest API & Axios.👨‍💻🌐
   
 ## 🚀 Installation
@@ -16,6 +16,7 @@
   - Run  ```yarn serve --port 4000``` to run the API ```http://localhost:4000/```
 
 ## 📷 Preview
-![Captura de pantalla (168)](https://user-images.githubusercontent.com/46753453/91246739-e4f3de80-e70d-11ea-885b-a97d790b09c3.png)
 ![Captura de pantalla (165)](https://user-images.githubusercontent.com/46753453/91246744-e6bda200-e70d-11ea-90d0-62283c7ab632.png)
 ![Captura de pantalla (166)](https://user-images.githubusercontent.com/46753453/91246748-e7563880-e70d-11ea-9661-0aafaa16857a.png)
+![Captura de pantalla (168)](https://user-images.githubusercontent.com/46753453/91246739-e4f3de80-e70d-11ea-885b-a97d790b09c3.png)
+
