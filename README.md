@@ -1,7 +1,9 @@
 
 ##  CRUD 
   Simple website using, react, Redux, Rest API & Axios.👨‍💻🌐
-  
+  ## ✔ Technologies
+- [ReactJS Documentation](https://es.reactjs.org/)
+- [Redux](https://es.redux.js.org/)
 ## 🚀 Installation
    ## Prerequisites
  
